@@ -1,0 +1,331 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Lucida Grande";
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.container {
+  padding: 10px 40px;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  background-color: #ffd32a;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.grid-container-header {
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+  margin: 0 auto;
+  min-height: 80px;
+}
+.grid-item-header {
+  font-size: 20px;
+  text-align: center;
+}
+
+.logo-header {
+  width: 80px;
+}
+
+.grid-item-header ul {
+  list-style: none;
+}
+
+.grid-item-header ul li {
+  float: right;
+  padding: 0px 10px;
+  line-height: 40px;
+  color: #fff;
+}
+
+.btn-login {
+  padding: 8px 24px;
+  background-color: #3c40c6;
+  color: #fff;
+  display: inline-block;
+  margin: 20px 0px;
+  animation-name: login;
+  animation-duration: 4s;
+}
+
+@keyframes login {
+  from {
+    background-color: #ffd32a;
+  }
+  to {
+    background-color: #3c40c6;
+  }
+}
+
+/* ------------------------------------------------------------- */
+.main-banner {
+  padding: 180px 0 100px 0;
+  background-image: url(https://prog-8.com/images/html/advanced/top_en.png);
+  background-size: cover;
+  color: white;
+  text-align: center;
+  height: 720px;
+  width: 100%;
+}
+
+.grid-container-main-banner {
+  display: grid;
+  grid-template-columns: 100%;
+}
+.grid-item-main-banner {
+  margin: 0 auto;
+}
+
+.grid-item-main-banner h1 {
+  opacity: 0.7;
+  font-size: 72px;
+  letter-spacing: 5px;
+}
+
+.grid-item-main-banner p {
+  opacity: 0.7;
+  margin-bottom: 3px;
+  font-size: 24px;
+}
+
+.btn-wrapper {
+  margin: 20px 0;
+}
+
+.get-started {
+  background-color: #fff;
+  margin-right: 10px;
+}
+
+.explore-more {
+  background-color: #fff;
+}
+
+.btn {
+  padding: 18px 24px;
+  color: #3c40c6;
+  display: inline-block;
+  opacity: 0.8;
+  font-weight: bold;
+}
+/* ------------------------------------------------------------- */
+.we-do {
+  padding: 20px 0 40px 0;
+  text-align: center;
+}
+
+.grid-container-we-do {
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+.grid-container-we-do h3 {
+  opacity: 0.7;
+  font-size: 48px;
+  letter-spacing: 2px;
+}
+
+.grid-container-we-do p {
+  opacity: 0.7;
+  margin-bottom: 3px;
+  font-size: 24px;
+}
+
+.grid-container-what-we-do {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  padding: 40px;
+}
+
+.grid-container-what-we-do h3 {
+  opacity: 0.7;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+.grid-container-what-we-do p {
+  opacity: 0.7;
+  margin-bottom: 3px;
+  font-size: 18px;
+}
+.grid-item-what-we-do {
+  padding: 80px 40px;
+  background-color: #ffd32a;
+  margin: 0px 5px;
+  color: #fff;
+}
+
+.icon-we-do {
+  width: 120px;
+}
+/* ------------------------------------------------------------- */
+
+.about-us {
+  padding: 40px 0 20px 0;
+  text-align: center;
+}
+
+.grid-container-about-us {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 40px;
+}
+
+.grid-container-about-us h3 {
+  opacity: 0.7;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+.grid-container-about-us p {
+  opacity: 0.7;
+  margin-bottom: 3px;
+  font-size: 18px;
+}
+.grid-item-about-us {
+  padding: 40px;
+  margin: 0px 5px;
+  color: black;
+  text-align: left;
+}
+
+.img-about-us {
+  width: 100%;
+  display: block;
+  height: 350px;
+}
+
+.learn-more {
+  background-color: #3c40c6;
+  margin-right: 10px;
+}
+.btn-us {
+  padding: 18px 24px;
+  color: #fff;
+  display: inline-block;
+  opacity: 0.8;
+  font-weight: bold;
+  margin-top: 10px;
+}
+/* ------------------------------------------------------------- */
+
+.project {
+  padding: 20px 0 40px 0;
+  text-align: center;
+  background-image: url(https://prog-8.com/images/html/advanced/top_en.png);
+  width: 100%;
+}
+
+.grid-container-project {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  padding: 40px;
+  color: #fff;
+}
+
+.grid-container-project h3 {
+  opacity: 0.7;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+.grid-container-project p {
+  opacity: 0.7;
+  margin-bottom: 3px;
+  font-size: 32px;
+}
+
+.icon-project {
+  font-size: 50px;
+}
+/* ------------------------------------------------------------- */
+.contact {
+  padding: 40px 0 20px 0;
+  text-align: center;
+}
+
+.grid-container-contact {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 40px;
+}
+
+.grid-container-contact h3 {
+  opacity: 0.7;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+.grid-container-contact p {
+  opacity: 0.7;
+  margin-bottom: 3px;
+  font-size: 18px;
+}
+.grid-item-contact {
+  padding: 40px;
+  margin: 0px 5px;
+  color: black;
+  text-align: left;
+}
+
+.img-contact {
+  width: 600px;
+  height: 350px;
+  border: 1px solid #3c40c6;
+}
+
+.btn-contact {
+  padding: 18px 24px;
+  color: #fff;
+  display: inline-block;
+  opacity: 0.8;
+  font-weight: bold;
+  margin-top: 10px;
+  background-color: #3c40c6;
+  margin-right: 10px;
+  animation-name: contact;
+  animation-duration: 4s;
+}
+
+@keyframes contact {
+  from {
+    background-color: #ffd32a;
+  }
+  to {
+    background-color: #3c40c6;
+  }
+}
+/* ------------------------------------------------------------- */
+input[type="text"],
+input[type="email"] {
+  padding: 8px 16px;
+  width: 100%;
+  border: 1px solid #3c40c6;
+  margin: 5px 0px;
+}
+/* ------------------------------------------------------------- */
+
+footer {
+  height: 80px;
+  background-color: black;
+  color: #fff;
+  line-height: 80px;
+  text-align: center;
+  font-size: 20px;
+}
+
+/* ------------------------------------------------------------- */
